@@ -1,0 +1,14 @@
+{
+  "name": "vuejs",
+  "version": "1.0.0",
+  "description": "A test file for crude vuejs",
+  "scripts": {
+    "build": "webpack",
+    "watch": "npm run build -- --watch"
+  },
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "vue": "^2.2.6",
+    "webpack": "^2.4.1"
+  }
+}
