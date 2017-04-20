@@ -1,0 +1,14 @@
+$primary: skyblue;
+$secondary: violet;
+
+body {
+  background: $primary;
+}
+
+.header {
+  background: url('./images/img.jpg');
+}
+
+.one {
+  color: $secondary;
+}
