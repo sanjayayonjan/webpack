@@ -3,11 +3,17 @@
   "version": "1.0.0",
   "description": "A test file for crude vuejs",
   "scripts": {
-    "build": "webpack",
+    "dev": "webpack",
+    "production": "NODE_ENV=production webpack",
     "watch": "npm run build -- --watch"
   },
   "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.1",
     "bootstrap": "^3.3.7",
+    "css-loader": "^0.28.0",
+    "style-loader": "^0.16.1",
     "vue": "^2.2.6",
     "webpack": "^2.4.1"
   }
