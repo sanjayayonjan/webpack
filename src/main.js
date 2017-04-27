@@ -1,8 +1,7 @@
 //var notify = require('./notification');
 //import {notify} from './notification';
 //import notify from './notification';
-
-import notification from './notification';
+//import Bootstrap from 'bootstrap/dist/css/bootstrap.css';
 
 import Vue from 'vue'
 import App from './App.vue'
@@ -12,10 +11,11 @@ new Vue({
     render: h => h(App)
 });
 
+import notification from './notification';
+
 console.log(notification);
 
-console.log('empty');
-console.log('Hello World ! Once Again to you !');
+console.log('Hello World ! Once Again to you & hg All !');
 
 // class Form {
 //     constructor() {

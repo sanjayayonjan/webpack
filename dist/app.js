@@ -73,10 +73,6 @@
 "use strict";
 
 
-var _notification = __webpack_require__(4);
-
-var _notification2 = _interopRequireDefault(_notification);
-
 var _vue = __webpack_require__(9);
 
 var _vue2 = _interopRequireDefault(_vue);
@@ -85,21 +81,27 @@ var _App = __webpack_require__(6);
 
 var _App2 = _interopRequireDefault(_App);
 
+var _notification = __webpack_require__(4);
+
+var _notification2 = _interopRequireDefault(_notification);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//var notify = require('./notification');
+//import {notify} from './notification';
+//import notify from './notification';
+//import Bootstrap from 'bootstrap/dist/css/bootstrap.css';
 
 new _vue2.default({
     el: '#app',
     render: function render(h) {
         return h(_App2.default);
     }
-}); //var notify = require('./notification');
-//import {notify} from './notification';
-//import notify from './notification';
+});
 
 console.log(_notification2.default);
 
-console.log('empty');
-console.log('Hello World ! Once Again to you !');
+console.log('Hello World ! Once Again to you & hg All !');
 
 // class Form {
 //     constructor() {

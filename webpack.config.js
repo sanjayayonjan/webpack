@@ -4,6 +4,7 @@ const glob = require('glob');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const PurifyCSSPlugin = require('purifycss-webpack');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const ManifestPlugin = require('webpack-manifest-plugin');
 const inProduction = (process.env.NODE_ENV === 'production');
 const compiler = require('vue-template-compiler');
 
@@ -11,14 +12,15 @@ module.exports = {
   entry: {
       app: [
           './src/main.js',
-          './src/custom.scss',
+          './src/main.scss',
       ],
       vendor: ['jquery']
   },
 
   output: {
     path: path.resolve(__dirname, './dist'),
-    filename: '[name].[chunkhash].js'
+      filename: '[name].js'
+    //filename: '[name].[chunkhash].js'
   },
 
   module: {
@@ -96,14 +98,7 @@ module.exports = {
           minimize: inProduction
       }),
 
-      function () {
-          this.plugin('done',stats => {
-              require('fs').writeFileSync(
-                  path.join(__dirname,'dist/manifest.json'),
-                  JSON.stringify(stats.toJson())
-              )
-          })
-      }
+      new ManifestPlugin(),
   ]
 };
 

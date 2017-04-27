@@ -18,4 +18,3 @@ export default {
     notify: notify,
     log: log
 };
-
