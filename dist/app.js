@@ -101,7 +101,48 @@ new _vue2.default({
 
 console.log(_notification2.default);
 
-console.log('Hello World ! Once Again to you & hg All !');
+// Example-1 (Arrow Function)
+var names = ['wes', 'kait', 'lux'];
+var fullNames = names.map(function (name) {
+    return name + ' bose';
+});
+
+var fullNames2 = names.map(function (name) {
+    return name + ' bose';
+});
+
+var fullNames3 = names.map(function (name) {
+    return name + ' bose';
+});
+
+var fullNames4 = names.map(function (name) {
+    return name + ' bose';
+});
+
+var fullNames5 = names.map(function () {
+    return 'cool bose';
+});
+
+//const sayMyName = (name) => { alert(`Hello ${name}!`) }
+
+//sayMyName('Wes');
+
+console.log(fullNames5);
+
+var race = '1000m Dash';
+var winners = ['Naruto', 'Luffy', 'Sasuke'];
+
+var win = winners.map(function (winner, i) {
+    return { name: winner, race: race, place: i + 1 };
+});
+console.log(win);
+
+var ages = [45, 74, 14, 78, 95, 47, 65];
+
+var old = ages.filter(function (age) {
+    return age >= 60;
+});
+console.log(old);
 
 // class Form {
 //     constructor() {
